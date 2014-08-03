@@ -1,33 +1,55 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dota 2 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.8.0/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.8.0/css/addons/uikit.addons.min.css">
     <link rel="stylesheet" type="text/css" href="docs.css">
-
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.8.0/js/uikit.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.8.0/js/addons/sticky.js"></script>
 </head>
 <body>
 <div class="floating-menu">
 <a href="#">Back to Top</a>
 </div>
-<div id="header">
-    <p>Welcome to the ModDota automatically generated docs, by SinZ</p>
-</div>
+<div id="header" class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-1-1">
+            <h1 class="uk-heading-large"> ModData Documentation</h1>
+            <p class="uk-text-large">Welcome to the ModDota automatically generated docs, by SinZ.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-3-4">
+            {contents}
+        </div>
+        <div class="uk-width-medium-1-4">
+            <div class="uk-panel uk-panel-box" data-uk-sticky="{{top:35}}">
+                <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{{closest:'li', smoothscroll:true}}">
+                    <li class="uk-nav-header">Classes</li>
+                    {tableofcontents}
+                    <li class="uk-nav-divider"></li>
+                    <li class><a href="http://renol.moddota.com/docs/#globals">Globals</a></li>
+                </ul>
+            </div>        
+        </div>
+    </div>
 <hr>
-<div id="tableofcontents">
-    {tableofcontents}
-    <br/>
-    <a href="#globals">Globals</a>
-</div>
-<hr>
-<div id="contents">
-    {contents}
-    <hr class="line-class-seperate">
-</div>
-<div id="globals">
-    Coming Soon!
-</div>
-<hr/>
-<div id="footer">
-    Website by SinZ
+<div id="footer" class="footer">
+    <div class="uk-container uk-container-center uk-text-center">
+        <ul class="uk-subnav uk-subnav-line">
+            <li>Cool</li>
+            <li>Links</li>
+            <li>Here</li>
+        </ul>
+        <div class="uk-panel">
+            <p>Website by SinZ. Designed by <a href="http://www.pagefortress.com">GenPage</a> with love and UIKit.<br>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+        </div>
+    </div>
 </div>
 </body>
 </html>

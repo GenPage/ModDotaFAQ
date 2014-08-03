@@ -1,2 +1,5 @@
-<a href="#class-{className}-func-{func}">{func}</a><br/>
-            
+                            <tr>
+                                <td><code>arg here</code></td>
+                                <td><p><a href="#class-{className}-func-{func}">{func}</a>
+                                <br>description here</p></td>
+                            </tr>

@@ -1,11 +1,13 @@
-            <div class="function"><a name="class-{className}-func-{func}">
-                <h2 id="func-title">{func}</h2>
-                <p id="func-officaldescription">{entry[comment]}</p>
-                <p id="func-communitydescription">{communityDesc}</p>
-                <p id="func-syntax">{entry[return]} {func}({args})</p>
-                <!--<div id="func-contents">
-                    {arg}
+                    <div id="class-{className}-func-{func}" name="{func}" class="uk-panel uk-panel-box">
+                        <div class="uk-panel-badge uk-badge uk-badge-big">{args}</div>
+                        <h3 id="func-title" class="uk-panel-title">{func}</h3>
+                        <p id="func-officaldescription">{entry[comment]}</p>
+                        <p id="func-communitydescription">{communityDesc}</p>
+                        <code id="func-syntax" class="method">{entry[return]} {func}(<em>{args}</em>)</code>
+                        <!--<div id="func-contents">
+                            {arg}
 
-                    <hr class="line-arg-seperate"/>
-                </div>-->
-            </a></div>
+                            <hr class="line-arg-seperate"/>
+                        </div>-->
+                    </div>
+                    <hr class="slim">            

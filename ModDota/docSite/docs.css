@@ -1,18 +1,3 @@
-.function  {
-    padding-left : 10px;
-    background : #EEEEEE;
-    
-    border-radius: 10px;
-}
-.class {
-    background : #DDDDDD;
-    border : 2px solid;
-    border-radius: 25px;
-}
-#func-syntax {
-    border : 1px solid #000000;
-    background : #ffffff;
-}
 div.floating-menu {
     position:fixed;
     left : 90%;
@@ -24,4 +9,69 @@ div.floating-menu {
 div.floating-menu a, div.floating-menu h3 {
     display:block;
     margin:0 0.5em;
+}
+code.method {
+    padding: 2px 6px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+.uk-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.uk-table tbody tr:last-child {
+    border-bottom: 0;
+}
+
+hr.slim {
+    margin: 0;
+}
+
+table p {
+    margin: 0;
+}
+
+.uk-panel-badge-2 {
+    position: absolute;
+    top: 10;
+    right: 37;
+    z-index: 0;
+}
+
+.uk-panel-badge-3 {
+    position: absolute;
+    top: 10;
+    right: 50;
+    z-index: 0;
+}
+
+.uk-badge-big {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer {
+    background: #252525;
+    padding: 20px 0;
+    color: #ddd !important
+}
+
+.footer a:hover {
+    color: #fff !important;
+}
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+
+    .footer { padding: 50px 0; }
+    
+}
+
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+
+    .footer { padding: 80px 0; }
+
 }

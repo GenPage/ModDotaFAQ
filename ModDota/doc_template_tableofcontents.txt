@@ -1,2 +1,1 @@
-<a href="#class-{name}">{name}</a><br/>
-    
+                    <li class=""><a href="#class-{name}">{name}</a></li>

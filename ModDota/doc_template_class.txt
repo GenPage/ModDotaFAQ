@@ -1,12 +1,22 @@
-<div class="class"><a name="class-{name}">
-        <h1 id="class-title">{name}</h1>
-        <h5 id="class-base">Extends from {entry[base]}</h3>
-        <p id="class-description">{entry[comment]}</p>
-        <p id="class-description-community">{description}</p>
-        <div id="class-tableofcontents">
-            {classtableofcontents}
-        </div>
-        <div id="class-contents">
-{function}
-        </div>
-    </a></div>
+            <div id="class-{name}" name="{name}">
+                <div class="uk-h2" id="class-title">{name}</div>
+                <em>Extends from {entry[base]}</em>
+                <p id="class-description">{entry[comment]} - {description}</p>
+                <div id="class-{name}-toc" class="uk-panel uk-panel-box uk-panel-box-primary">
+                    <table class="uk-table">
+                        <thead>
+                            <tr>
+                                <th>Modifier and Type</th>
+                                <th>Method and Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {classtableofcontents}
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Method Summary</h3>
+                <div class="uk-panel uk-panel-box uk-panel-divider">
+                    {function}
+                </div>
+            </div>
