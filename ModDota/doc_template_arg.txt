@@ -1,1 +1,1 @@
-{type} <em style="color: #fff;">{name}</em>
+{type} <i>{name}</i>
